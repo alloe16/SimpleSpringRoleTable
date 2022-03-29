@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+<h1>Welcome,user</h1>
+</body>
+<table style="margin-left:auto;margin-right:auto;">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Login</th>
+        <th>Password</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block >
+        <tr>
+            <td>[[${UserList.getIdUser}]]</td>
+            <td>[[${UserList.getName}]]</td>
+            <td>[[${UserList.getPassword}]]</td>
+            <td>[[${UserList.getEmail}]]</td>
+        </tr>
+    </th:block>
+    </tbody>
+    <table/>
+</html>

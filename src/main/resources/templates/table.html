@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table</title>
+</head>
+<body>
+<h1>Welcome,admin</h1>
+</body>
+<table style="margin-left:auto;margin-right:auto;">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Login</th>
+        <th>Password</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="admin:${AdminList}">
+        <tr>
+            <td>[[${admin.getIdUser}]]</td>
+            <td>[[${admin.getName}]]</td>
+            <td>[[${admin.getPassword}]]</td>
+            <td>[[${admin.getEmail}]]</td>
+        </tr>
+    </th:block>
+    </tbody>
+    <table/>
+
+</html>
